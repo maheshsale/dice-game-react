@@ -52,7 +52,7 @@
 
 .select-number h3{
       display: flex;
-      justify-content: end;
+      justify-content: flex-end;
 }
 
 .roll-dice{
