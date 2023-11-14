@@ -1,7 +1,7 @@
 import './App.css';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import Welcome from './pages/Welcome';
-import Play from './pages/Play';
+import Welcome from './pages/welcome/Welcome';
+import Play from './pages/play/Play';
 
 
 function App() {

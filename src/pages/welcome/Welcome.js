@@ -1,7 +1,9 @@
 import './Welcome.css';
-import Image from '../images/dice1.png'
+import Image from './images/dice1.png'
+import { useNavigate } from 'react-router-dom';
 
 function Welcome(){
+      const navigate = useNavigate();
       return(
             <div className='container'>
                   <div className="dice1">
@@ -9,7 +11,7 @@ function Welcome(){
                   </div>
                   <div className="title">
                         <h1>DICE GAME</h1>
-                        <button className='play-btn'>Play Now</button>
+                        <button className='play-btn' onClick={() => navigate("/play")}>Play Now</button>
                   </div>
             </div>
       );
