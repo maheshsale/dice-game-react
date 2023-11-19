@@ -30,6 +30,7 @@
 }
 
 .buttons label{
+      border: 1px solid blue;
       width: 72px;
       height: 72px;
       display: flex;
@@ -38,6 +39,12 @@
       justify-content: center;
       font-size: 30px;
       font-weight: 600;
+      margin: 10px;
+      margin-bottom: 0px;
+}
+
+.buttons input{
+      display: none;
 }
 
 .header{
