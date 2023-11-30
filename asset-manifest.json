@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/dice-game-react/static/css/main.ced72890.css",
-    "main.js": "/dice-game-react/static/js/main.f2090044.js",
+    "main.js": "/dice-game-react/static/js/main.d4bc9281.js",
     "static/media/dice1.png": "/dice-game-react/static/media/dice1.c6edede13c67790d5c57.png",
     "index.html": "/dice-game-react/index.html",
     "main.ced72890.css.map": "/dice-game-react/static/css/main.ced72890.css.map",
-    "main.f2090044.js.map": "/dice-game-react/static/js/main.f2090044.js.map"
+    "main.d4bc9281.js.map": "/dice-game-react/static/js/main.d4bc9281.js.map"
   },
   "entrypoints": [
     "static/css/main.ced72890.css",
-    "static/js/main.f2090044.js"
+    "static/js/main.d4bc9281.js"
   ]
 }
