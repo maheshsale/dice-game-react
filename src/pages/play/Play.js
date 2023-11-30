@@ -13,7 +13,7 @@ function Play(){
 
       const [cube, setCube] = useState('images/dice_1.png');
 
-      const [labelStyles, setLabelStyles] = [null, null, null, null, null, null];
+      const [labelStyles, setLabelStyles] = useState([{}, {}, {}, {}, {}, {}]);
       // let labelStyles = [null, null, null, null, null, null];
 
       let diceArray = ['dice_1', 'dice_2', 'dice_3', 'dice_4', 'dice_5', 'dice_6'];
@@ -49,14 +49,15 @@ function Play(){
       }
 
       const setStyles = (index) => {
-            const newStyles = labelStyles.map( (style) => {
-                  if(style.backgroundColor === "green"){
-                     style.backgroundColor = "white";
-                     return style;
+            const newStyles = [];
+            for(let i=0; i < 6 ; i++){
+                  if(i === index){
+                        newStyles[i] = {backgroundColor:"green", color:"white"};
+                  } else {
+                        newStyles[i] = {backgroundColor:"white", color:"black"};
                   }
-            });
-            newStyles[index] = {backgroundColor:"green"};
-            setLabelStyles(newStyles);
+            }
+            setLabelStyles([...newStyles]);
       }
 
       return(
@@ -71,15 +72,15 @@ function Play(){
                                     <input type="radio" name="selected-number" value="1" id="one" onChange={handleChange}/>
                                     <label htmlFor="one" onClick={() => setStyles(0)} style={labelStyles[0]}>1</label>
                                     <input type="radio" name="selected-number" value="2" id="two" onChange={handleChange}/>
-                                    <label htmlFor="two">2</label>
+                                    <label htmlFor="two" onClick={() => setStyles(1)} style={labelStyles[1]}>2</label>
                                     <input type="radio" name="selected-number" value="3" id="three" onChange={handleChange}/>
-                                    <label htmlFor="three">3</label>
+                                    <label htmlFor="three" onClick={() => setStyles(2)} style={labelStyles[2]}>3</label>
                                     <input type="radio" name="selected-number" value="4" id="four" onChange={handleChange}/>
-                                    <label htmlFor="four">4</label>
+                                    <label htmlFor="four" onClick={() => setStyles(3)} style={labelStyles[3]}>4</label>
                                     <input type="radio" name="selected-number" value="5" id="five" onChange={handleChange}/>
-                                    <label htmlFor="five">5</label>
+                                    <label htmlFor="five" onClick={() => setStyles(4)} style={labelStyles[4]}>5</label>
                                     <input type="radio" name="selected-number" value="6" id="six" onChange={handleChange}/>
-                                    <label htmlFor="six">6</label>
+                                    <label htmlFor="six" onClick={() => setStyles(5)} style={labelStyles[5]}>6</label>
                               </div>
                               <h3>Select Number</h3>
                         </div>
