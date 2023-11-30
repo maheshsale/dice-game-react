@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/maheshsale/dice-game-react.git/static/css/main.f954a138.css",
-    "main.js": "/maheshsale/dice-game-react.git/static/js/main.961adb59.js",
-    "static/media/dice1.png": "/maheshsale/dice-game-react.git/static/media/dice1.c6edede13c67790d5c57.png",
-    "index.html": "/maheshsale/dice-game-react.git/index.html",
-    "main.f954a138.css.map": "/maheshsale/dice-game-react.git/static/css/main.f954a138.css.map",
-    "main.961adb59.js.map": "/maheshsale/dice-game-react.git/static/js/main.961adb59.js.map"
+    "main.css": "/dice-game-react/static/css/main.ced72890.css",
+    "main.js": "/dice-game-react/static/js/main.f2090044.js",
+    "static/media/dice1.png": "/dice-game-react/static/media/dice1.c6edede13c67790d5c57.png",
+    "index.html": "/dice-game-react/index.html",
+    "main.ced72890.css.map": "/dice-game-react/static/css/main.ced72890.css.map",
+    "main.f2090044.js.map": "/dice-game-react/static/js/main.f2090044.js.map"
   },
   "entrypoints": [
-    "static/css/main.f954a138.css",
-    "static/js/main.961adb59.js"
+    "static/css/main.ced72890.css",
+    "static/js/main.f2090044.js"
   ]
 }
