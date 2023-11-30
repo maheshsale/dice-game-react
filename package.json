@@ -1,8 +1,8 @@
 {
-  "homepage":"http://maheshsale.github.io/dice-game-react",
+  "homepage":"https://maheshsale.github.io/dice-game-react/",
   "name": "dice-game-react",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@testing-library/jest-dom": "^5.17.0",
