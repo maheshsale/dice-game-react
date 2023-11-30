@@ -7,11 +7,11 @@ import Play from './pages/play/Play';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route path='/' element={<Welcome />}>
           </Route>
-          <Route path='play' element={<Play />}>
+          <Route path='/play' element={<Play />}>
           </Route>
         </Routes>
       </BrowserRouter>
