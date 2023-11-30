@@ -12,7 +12,10 @@ function Play(){
       const [isDiceSelected, setIsDiceSelected] = useState(false);
 
       const [cube, setCube] = useState('images/dice_1.png');
-      
+
+      const [labelStyles, setLabelStyles] = [null, null, null, null, null, null];
+      // let labelStyles = [null, null, null, null, null, null];
+
       let diceArray = ['dice_1', 'dice_2', 'dice_3', 'dice_4', 'dice_5', 'dice_6'];
       
       if(isNumberSelected && isDiceSelected){
@@ -44,6 +47,18 @@ function Play(){
       const resetScore = () => {
             setScore(0);
       }
+
+      const setStyles = (index) => {
+            const newStyles = labelStyles.map( (style) => {
+                  if(style.backgroundColor === "green"){
+                     style.backgroundColor = "white";
+                     return style;
+                  }
+            });
+            newStyles[index] = {backgroundColor:"green"};
+            setLabelStyles(newStyles);
+      }
+
       return(
             <div className="container1">
                   <div className="header">
@@ -54,7 +69,7 @@ function Play(){
                         <div className="select-number">
                               <div className="buttons">
                                     <input type="radio" name="selected-number" value="1" id="one" onChange={handleChange}/>
-                                    <label htmlFor="one">1</label>
+                                    <label htmlFor="one" onClick={() => setStyles(0)} style={labelStyles[0]}>1</label>
                                     <input type="radio" name="selected-number" value="2" id="two" onChange={handleChange}/>
                                     <label htmlFor="two">2</label>
                                     <input type="radio" name="selected-number" value="3" id="three" onChange={handleChange}/>
